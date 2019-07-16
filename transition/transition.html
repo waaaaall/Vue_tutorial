@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<title>Vue transition</title>
+<link rel="stylesheet" href="transition.css">
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <button @click="isShown = !isShown">表示の切り替え</button>
+    <transition>
+        <p v-show="isShown">Hello, world</p>
+    </transition>
+</div>
+
+<script src="./transition.js"></script>
